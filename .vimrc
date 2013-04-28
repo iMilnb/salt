@@ -1,28 +1,46 @@
-set ts=4
+set ts=8
 set noai
 set ruler
 syntax on
 set background=dark
 let g:molokai_original=1
 set t_Co=256 
-colorscheme molokai
+colorscheme molokai-trans
 
-" set tabstop to 8 for makefiles (needs ftp plugin)
-au FileType make set ts=8
+set list listchars=tab:»\ 
 
-nnoremap tn :tabnew<CR>
-nnoremap tc :tabclose<CR>
+au FileType c colorscheme molokai
+
+" inside screen / tmux
+map <Esc>[C <C-Right>
+map <Esc>[D <C-Left>
+map! <Esc>[C <C-Right>
+map! <Esc>[D <C-Left>
+" no screen
+map <Esc>[1;5D <C-Left>
+map <Esc>[1;5C <C-Right>
+map! <Esc>[1;5D <C-Left>
+map! <Esc>[1;5C <C-Right>
+
+nnoremap <C-t> :tabnew<CR>
+nnoremap <C-w> :tabclose<CR>
+nnoremap <C-right> :tabnext<CR>
+nnoremap <C-left> :tabprevious<CR>
+inoremap <C-t> <Esc>:tabnew<CR>
+inoremap <C-w> <Esc>:tabclose<CR>
+inoremap <C-right> <Esc>:tabnext<CR>
+inoremap <C-left> <Esc>:tabprevious<CR>
 " tabs 1 to 10
-nnoremap t1 1gt
-nnoremap t2 2gt
-nnoremap t3 3gt
-nnoremap t4 4gt
-nnoremap t5 5gt
-nnoremap t6 6gt
-nnoremap t7 7gt
-nnoremap t8 8gt
-nnoremap t9 9gt
-nnoremap t0 10gt
+nnoremap '1 1gt
+nnoremap '2 2gt
+nnoremap '3 3gt
+nnoremap '4 4gt
+nnoremap '5 5gt
+nnoremap '6 6gt
+nnoremap '7 7gt
+nnoremap '8 8gt
+nnoremap '9 9gt
+nnoremap '0 10gt
 " previous / next tab
-nnoremap tk gt
-nnoremap tj gT
+nnoremap 'p gT
+nnoremap 'n gt
