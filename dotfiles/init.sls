@@ -1,7 +1,7 @@
 {% for rcfile, remote in pillar['dotfiles'].iteritems() %}
 /home/imil/{{ rcfile }}:
   file.managed:
-    - source: salt://{{ remote }}/dotfiles
+    - source: salt://dotfiles/{{ remote }}
     - user: imil
     {% if grains['os'] == 'NetBSD' %}
     - group: wheel

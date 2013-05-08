@@ -7,9 +7,15 @@ let g:molokai_original=1
 set t_Co=256 
 colorscheme molokai-trans
 
-set list listchars=tab:»\ 
+au BufRead,BufNewFile pico.* setfiletype text
 
 au FileType c colorscheme molokai
+au FileType text set spell spelllang=en,fr
+
+set list listchars=tab:»\ 
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=8
 
 " inside screen / tmux
 map <Esc>[C <C-Right>
