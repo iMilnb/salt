@@ -118,7 +118,7 @@ set -g status-bg colour235
 # current or active window in status bar
 set-window-option -g window-status-current-bg colour53
 set-window-option -g window-status-current-fg white
-set-window-option -g window-status-current-format '[ #W ]'
+set-window-option -g window-status-current-format '» #W '
 
 # alerted window in status bar (bell, activity or content).
 set-window-option -g window-status-alert-bg colour235
