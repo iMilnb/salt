@@ -8,6 +8,7 @@ set t_Co=256
 colorscheme molokai-trans
 
 au BufRead,BufNewFile pico.* setfiletype text
+au BufRead,BufNewFile *.sls setfiletype yaml
 
 au FileType c colorscheme molokai
 au FileType text set spell spelllang=en,fr
