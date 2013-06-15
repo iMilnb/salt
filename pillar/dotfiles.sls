@@ -15,3 +15,5 @@ dotfiles:
     .vim_colors_molokai-trans.vim
   .vim/colors/molokai.vim:
     .vim_colors_molokai.vim
+  .vim/plugin/gnupg.vim:
+    .vim_plugin_gnupg.vim
