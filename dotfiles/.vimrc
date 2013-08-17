@@ -9,7 +9,7 @@ colorscheme molokai-trans
 
 au BufRead,BufNewFile pico.* setfiletype text
 au BufRead,BufNewFile *.sls setfiletype yaml
-au BufRead,BufNewFile *.md,*.markdown setfiletype ghmarkdown
+au BufRead,BufNewFile *.md,*.markdown setlocal filetype=ghmarkdown
 
 au FileType c colorscheme molokai
 au FileType text set spell spelllang=en,fr
