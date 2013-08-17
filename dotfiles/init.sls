@@ -13,6 +13,6 @@
 
 /home/imil/.vim:
   file.recurse:
-    - source: salt://dotfiles/vim
+    - source: salt://dotfiles/.vim
     - include_empty: True
     - user: imil
