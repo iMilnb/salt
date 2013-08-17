@@ -11,15 +11,8 @@
     - mode: 644
 {% endfor %}
 
-/home/imil/.vim/spell:
-  file.recurse:
-    - source: salt://dotfiles/vim-spell
-    - include_empty: True
-
 /home/imil/.vim:
-  file.directory:
+  file.recurse:
+    - source://dotfiles/vim
+    - include_empty: True
     - user: imil
-    - recurse:
-      - user
-    - require:
-      - file: /home/imil/.vim/spell

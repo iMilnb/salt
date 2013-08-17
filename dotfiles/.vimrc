@@ -9,9 +9,11 @@ colorscheme molokai-trans
 
 au BufRead,BufNewFile pico.* setfiletype text
 au BufRead,BufNewFile *.sls setfiletype yaml
+au BufRead,BufNewFile *.md,*.markdown setfiletype ghmarkdown
 
 au FileType c colorscheme molokai
 au FileType text set spell spelllang=en,fr
+au FileType python set ts=4 expandtab
 
 set list listchars=tab:»\ 
 
