@@ -17,6 +17,8 @@ au FileType python set ts=4 expandtab
 
 set list listchars=tab:»\ 
 
+set modeline
+
 set colorcolumn=80
 highlight ColorColumn ctermbg=8
 
